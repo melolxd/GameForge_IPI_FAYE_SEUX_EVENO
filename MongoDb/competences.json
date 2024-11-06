@@ -1,0 +1,303 @@
+{
+    "_id": 1,
+    "nom": "Attaque Puissante",
+    "cooldown": 10,
+    "effets": {
+      "degats": 150,
+      "zone": "proche",
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 20,
+      "mana": 0
+    },
+    "description": "Une attaque qui inflige de lourds dégâts aux ennemis proches."
+  }
+  {
+    "_id": 2,
+    "nom": "Bouclier Magique",
+    "cooldown": 15,
+    "effets": {
+      "protection": 100,
+      "duree": 8,
+      "type": "magique"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 25
+    },
+    "description": "Un bouclier temporaire qui absorbe les dégâts magiques."
+  }
+  {
+    "_id": 3,
+    "nom": "Frappe de Foudre",
+    "cooldown": 12,
+    "effets": {
+      "degats": 120,
+      "cible": "unique",
+      "type": "électrique"
+    },
+    "cout": {
+      "energie": 10,
+      "mana": 15
+    },
+    "description": "Inflige des dégâts électriques à une cible unique."
+  }
+  {
+    "_id": 4,
+    "nom": "Coup Rapide",
+    "cooldown": 5,
+    "effets": {
+      "degats": 60,
+      "vitesse": 20,
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 5,
+      "mana": 0
+    },
+    "description": "Une attaque rapide qui augmente la vitesse d'attaque temporairement."
+  }
+  {
+    "_id": 5,
+    "nom": "Soin",
+    "cooldown": 8,
+    "effets": {
+      "soin": 100,
+      "portee": "soi-même",
+      "type": "magique"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 20
+    },
+    "description": "Restaure une petite quantité de santé."
+  }
+  {
+    "_id": 6,
+    "nom": "Cri de Guerre",
+    "cooldown": 20,
+    "effets": {
+      "boost": {
+        "attaque": 15,
+        "defense": 10
+      },
+      "duree": 10,
+      "portee": "alliés proches"
+    },
+    "cout": {
+      "energie": 15,
+      "mana": 10
+    },
+    "description": "Augmente temporairement l'attaque et la défense des alliés proches."
+  }
+  {
+    "_id": 7,
+    "nom": "Pluie de Flèches",
+    "cooldown": 18,
+    "effets": {
+      "degats": 100,
+      "zone": "large",
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 10,
+      "mana": 15
+    },
+    "description": "Inflige des dégâts à toutes les cibles dans une zone large."
+  }
+  {
+    "_id": 8,
+    "nom": "Invisibilité",
+    "cooldown": 25,
+    "effets": {
+      "duree": 15,
+      "type": "camouflage"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 30
+    },
+    "description": "Permet de devenir invisible pour une durée limitée."
+  }
+  {
+    "_id": 9,
+    "nom": "Téléportation",
+    "cooldown": 30,
+    "effets": {
+      "distance": 50,
+      "type": "déplacement"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 50
+    },
+    "description": "Permet de se déplacer instantanément vers un lieu proche."
+  }
+  {
+    "_id": 10,
+    "nom": "Rage du Berserker",
+    "cooldown": 40,
+    "effets": {
+      "boost": {
+        "degats": 30,
+        "reduction_defense": -20
+      },
+      "duree": 20,
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 25,
+      "mana": 0
+    },
+    "description": "Augmente les dégâts infligés mais réduit la défense du joueur."
+  }
+  {
+    "_id": 11,
+    "nom": "Vague de Feu",
+    "cooldown": 22,
+    "effets": {
+      "degats": 130,
+      "zone": "moyenne",
+      "type": "feu"
+    },
+    "cout": {
+      "energie": 10,
+      "mana": 30
+    },
+    "description": "Déclenche une vague de feu qui brûle tous les ennemis dans la zone."
+  }
+  {
+    "_id": 12,
+    "nom": "Mur de Glace",
+    "cooldown": 28,
+    "effets": {
+      "protection": 200,
+      "duree": 10,
+      "type": "glace"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 35
+    },
+    "description": "Élève un mur de glace qui bloque les attaques ennemies."
+  }
+  {
+    "_id": 13,
+    "nom": "Poison Mortel",
+    "cooldown": 12,
+    "effets": {
+      "degats": 50,
+      "duree": 10,
+      "type": "poison"
+    },
+    "cout": {
+      "energie": 5,
+      "mana": 10
+    },
+    "description": "Empoisonne l'ennemi, infligeant des dégâts sur la durée."
+  }
+  {
+    "_id": 14,
+    "nom": "Guérison de Masse",
+    "cooldown": 50,
+    "effets": {
+      "soin": 250,
+      "portee": "alliés proches",
+      "type": "magique"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 40
+    },
+    "description": "Soigne tous les alliés proches de manière significative."
+  }
+  {
+    "_id": 15,
+    "nom": "Éclair de Givre",
+    "cooldown": 14,
+    "effets": {
+      "degats": 100,
+      "ralentissement": 20,
+      "type": "glace"
+    },
+    "cout": {
+      "energie": 10,
+      "mana": 20
+    },
+    "description": "Inflige des dégâts et ralentit les ennemis touchés."
+  }
+  {
+    "_id": 16,
+    "nom": "Explosion Sismique",
+    "cooldown": 45,
+    "effets": {
+      "degats": 200,
+      "zone": "large",
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 30,
+      "mana": 0
+    },
+    "description": "Provoque un tremblement de terre qui inflige des dégâts à tous les ennemis dans une large zone."
+  }
+  {
+    "_id": 17,
+    "nom": "Bouclier Divin",
+    "cooldown": 60,
+    "effets": {
+      "protection": 300,
+      "duree": 15,
+      "type": "divin"
+    },
+    "cout": {
+      "energie": 0,
+      "mana": 50
+    },
+    "description": "Confère une protection divine qui bloque tous les dégâts pour une courte durée."
+  }
+  {
+    "_id": 18,
+    "nom": "Lame Sanguinaire",
+    "cooldown": 20,
+    "effets": {
+      "degats": 120,
+      "vampirisme": 10,
+      "type": "physique"
+    },
+    "cout": {
+      "energie": 15,
+      "mana": 0
+    },
+    "description": "Inflige des dégâts et régénère une partie des points de vie infligés."
+  }
+  {
+    "_id": 19,
+    "nom": "Barrière de Vent",
+    "cooldown": 25,
+    "effets": {
+      "protection": 150,
+      "duree": 12,
+      "type": "vent"
+    },
+    "cout": {
+      "energie": 5,
+      "mana": 15
+    },
+    "description": "Crée une barrière de vent qui réduit les dégâts à distance."
+  }
+  {
+    "_id": 20,
+    "nom": "Éclair du Phoenix",
+    "cooldown": 55,
+    "effets": {
+      "degats": 250,
+      "type": "feu"
+    },
+    "cout": {
+      "energie": 20,
+      "mana": 60
+    },
+    "description": "Un puissant éclair de feu qui inflige des dégâts dévastateurs à une cible unique."
+  }

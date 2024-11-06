@@ -1,0 +1,279 @@
+{
+    "_id": 1,
+    "nom": "Épée du Brave",
+    "type": "arme",
+    "effets": {
+      "attaque": 15
+    },
+    "description": "Une épée conférant un bonus d'attaque aux guerriers courageux."
+  }
+  {
+    "_id": 2,
+    "nom": "Bouclier de Fer",
+    "type": "bouclier",
+    "effets": {
+      "defense": 20
+    },
+    "description": "Un bouclier robuste qui augmente la défense."
+  }
+  {
+    "_id": 3,
+    "nom": "Potion de Soin",
+    "type": "consommable",
+    "effets": {
+      "soin": 50
+    },
+    "description": "Restaure une petite quantité de santé."
+  }
+  {
+    "_id": 4,
+    "nom": "Potion de Mana",
+    "type": "consommable",
+    "effets": {
+      "mana": 30
+    },
+    "description": "Restaure une petite quantité de mana."
+  }
+  {
+    "_id": 5,
+    "nom": "Arc Long",
+    "type": "arme",
+    "effets": {
+      "attaque": 10,
+      "portee": "longue"
+    },
+    "description": "Un arc qui permet des attaques à longue portée."
+  }
+  {
+    "_id": 6,
+    "nom": "Amulette de Force",
+    "type": "accessoire",
+    "effets": {
+      "attaque": 5,
+      "defense": 5
+    },
+    "description": "Augmente légèrement l'attaque et la défense."
+  }
+  {
+    "_id": 7,
+    "nom": "Anneau de Sagesse",
+    "type": "accessoire",
+    "effets": {
+      "mana": 20
+    },
+    "description": "Augmente la réserve de mana."
+  }
+  {
+    "_id": 8,
+    "nom": "Cape d'Invisibilité",
+    "type": "armure",
+    "effets": {
+      "discretion": 15
+    },
+    "description": "Confère un bonus de discrétion au porteur."
+  }
+  {
+    "_id": 9,
+    "nom": "Bottes de Vitesse",
+    "type": "armure",
+    "effets": {
+      "vitesse": 10
+    },
+    "description": "Augmente la vitesse de déplacement."
+  }
+  {
+    "_id": 10,
+    "nom": "Casque de l'Inébranlable",
+    "type": "armure",
+    "effets": {
+      "defense": 10,
+      "resistance_stun": 5
+    },
+    "description": "Un casque qui augmente la défense et réduit les effets de stun."
+  }
+  {
+    "_id": 11,
+    "nom": "Gants d'Assassin",
+    "type": "armure",
+    "effets": {
+      "attaque_critique": 5
+    },
+    "description": "Augmente les chances de coup critique."
+  }
+  {
+    "_id": 12,
+    "nom": "Hache de Guerre",
+    "type": "arme",
+    "effets": {
+      "attaque": 20
+    },
+    "description": "Une hache puissante pour les guerriers."
+  }
+  {
+    "_id": 13,
+    "nom": "Bâton de Mage",
+    "type": "arme",
+    "effets": {
+      "attaque_magique": 15,
+      "mana": 10
+    },
+    "description": "Augmente l'attaque magique et la réserve de mana."
+  }
+  {
+    "_id": 14,
+    "nom": "Anneau de Régénération",
+    "type": "accessoire",
+    "effets": {
+      "regen_sante": 2
+    },
+    "description": "Régénère lentement la santé au fil du temps."
+  }
+  {
+    "_id": 15,
+    "nom": "Talisman de Protection",
+    "type": "accessoire",
+    "effets": {
+      "defense_magique": 10
+    },
+    "description": "Protège des attaques magiques."
+  }
+  {
+    "_id": 16,
+    "nom": "Potion d'Énergie",
+    "type": "consommable",
+    "effets": {
+      "energie": 25
+    },
+    "description": "Restaure une petite quantité d'énergie."
+  }
+  {
+    "_id": 17,
+    "nom": "Ceinture du Gladiateur",
+    "type": "accessoire",
+    "effets": {
+      "attaque": 10,
+      "defense": 5
+    },
+    "description": "Améliore l'attaque et la défense."
+  }
+  {
+    "_id": 18,
+    "nom": "Potion de Résistance",
+    "type": "consommable",
+    "effets": {
+      "defense": 15
+    },
+    "description": "Augmente temporairement la défense."
+  }
+  {
+    "_id": 19,
+    "nom": "Bottes de Lévitation",
+    "type": "armure",
+    "effets": {
+      "vitesse": 5,
+      "levitation": true
+    },
+    "description": "Permet de se déplacer légèrement au-dessus du sol."
+  }
+  {
+    "_id": 20,
+    "nom": "Cape de Résistance au Feu",
+    "type": "armure",
+    "effets": {
+      "resistance_feu": 20
+    },
+    "description": "Réduit les dégâts de feu subis."
+  }
+  {
+    "_id": 21,
+    "nom": "Épée Enflammée",
+    "type": "arme",
+    "effets": {
+      "attaque": 15,
+      "degats_feu": 5
+    },
+    "description": "Une épée qui inflige des dégâts de feu supplémentaires."
+  }
+  {
+    "_id": 22,
+    "nom": "Casque d'Immunité",
+    "type": "armure",
+    "effets": {
+      "immunite_poison": true
+    },
+    "description": "Protège contre les effets de poison."
+  }
+  {
+    "_id": 23,
+    "nom": "Gantelets de Force",
+    "type": "armure",
+    "effets": {
+      "attaque": 10
+    },
+    "description": "Augmente la force de frappe."
+  }
+  {
+    "_id": 24,
+    "nom": "Bouclier Mystique",
+    "type": "bouclier",
+    "effets": {
+      "defense_magique": 15
+    },
+    "description": "Offre une bonne défense contre les sorts."
+  }
+  {
+    "_id": 25,
+    "nom": "Potion de Puissance",
+    "type": "consommable",
+    "effets": {
+      "attaque": 20
+    },
+    "description": "Augmente temporairement l'attaque."
+  }
+  {
+    "_id": 26,
+    "nom": "Talisman de Vitesse",
+    "type": "accessoire",
+    "effets": {
+      "vitesse": 10
+    },
+    "description": "Confère un bonus de vitesse."
+  }
+  {
+    "_id": 27,
+    "nom": "Lance de Glace",
+    "type": "arme",
+    "effets": {
+      "attaque": 12,
+      "degats_glace": 8
+    },
+    "description": "Une lance qui inflige des dégâts de glace."
+  }
+  {
+    "_id": 28,
+    "nom": "Cape de l'Ombre",
+    "type": "armure",
+    "effets": {
+      "discretion": 20
+    },
+    "description": "Idéale pour les opérations discrètes."
+  }
+  {
+    "_id": 29,
+    "nom": "Ceinture de Vitalité",
+    "type": "accessoire",
+    "effets": {
+      "sante_max": 50
+    },
+    "description": "Augmente la santé maximale du porteur."
+  }
+  {
+    "_id": 30,
+    "nom": "Bouclier Solaire",
+    "type": "bouclier",
+    "effets": {
+      "defense": 10,
+      "resistance_feu": 15
+    },
+    "description": "Protège efficacement contre les dégâts de feu."
+  }

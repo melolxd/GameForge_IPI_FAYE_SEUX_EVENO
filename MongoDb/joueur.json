@@ -1,0 +1,161 @@
+{
+    "player_id": 1,
+    "pseudo": "DragonSlayer",
+    "classe": "Guerrier",
+    "niveau": 35,
+    "competences": [
+      { "_id": 1, "nom": "Coup Puissant" },
+      { "_id": 7, "nom": "Cri de Guerre" }
+    ],
+    "inventaire": [
+      { "_id": 1, "nom": "Épée du Brave", "quantite": 1 },
+      { "_id": 2, "nom": "Bouclier de Fer", "quantite": 1 },
+      { "_id": 14, "nom": "Anneau de Régénération", "quantite": 2 }
+    ],
+    "date_connexion": "2024-11-01"
+  }
+  {
+    "player_id": 2,
+    "pseudo": "MysticMage",
+    "classe": "Mage",
+    "niveau": 40,
+    "competences": [
+      { "_id": 4, "nom": "Flèche de Glace" },
+      { "_id": 13, "nom": "Tempête d'Éclairs" }
+    ],
+    "inventaire": [
+      { "_id": 4, "nom": "Potion de Mana", "quantite": 5 },
+      { "_id": 13, "nom": "Bâton de Mage", "quantite": 1 },
+      { "_id": 20, "nom": "Cape de Résistance au Feu", "quantite": 1 }
+    ],
+    "date_connexion": "2024-10-30"
+  }
+  {
+    "player_id": 3,
+    "pseudo": "ShadowStalker",
+    "classe": "Assassin",
+    "niveau": 28,
+    "competences": [
+      { "_id": 8, "nom": "Camouflage" },
+      { "_id": 11, "nom": "Coup Critique" }
+    ],
+    "inventaire": [
+      { "_id": 9, "nom": "Bottes de Vitesse", "quantite": 1 },
+      { "_id": 8, "nom": "Cape d'Invisibilité", "quantite": 1 },
+      { "_id": 11, "nom": "Gants d'Assassin", "quantite": 2 }
+    ],
+    "date_connexion": "2024-10-29"
+  }
+  {
+    "player_id": 4,
+    "pseudo": "HolyPriest",
+    "classe": "Prêtre",
+    "niveau": 33,
+    "competences": [
+      { "_id": 10, "nom": "Soins Divins" },
+      { "_id": 16, "nom": "Bouclier de Lumière" }
+    ],
+    "inventaire": [
+      { "_id": 3, "nom": "Potion de Soin", "quantite": 10 },
+      { "_id": 7, "nom": "Anneau de Sagesse", "quantite": 1 },
+      { "_id": 14, "nom": "Anneau de Régénération", "quantite": 1 }
+    ],
+    "date_connexion": "2024-11-02"
+  }
+  {
+    "player_id": 5,
+    "pseudo": "ThunderKing",
+    "classe": "Guerrier",
+    "niveau": 37,
+    "competences": [
+      { "_id": 3, "nom": "Éclair Foudroyant" },
+      { "_id": 9, "nom": "Force Supérieure" }
+    ],
+    "inventaire": [
+      { "_id": 5, "nom": "Arc Long", "quantite": 1 },
+      { "_id": 17, "nom": "Ceinture du Gladiateur", "quantite": 1 },
+      { "_id": 6, "nom": "Amulette de Force", "quantite": 3 }
+    ],
+    "date_connexion": "2024-10-28"
+  }
+  {
+    "player_id": 6,
+    "pseudo": "FireWizard",
+    "classe": "Mage",
+    "niveau": 45,
+    "competences": [
+      { "_id": 6, "nom": "Explosion de Feu" },
+      { "_id": 20, "nom": "Éclair du Phoenix" }
+    ],
+    "inventaire": [
+      { "_id": 4, "nom": "Potion de Mana", "quantite": 7 },
+      { "_id": 21, "nom": "Épée Enflammée", "quantite": 1 },
+      { "_id": 13, "nom": "Bâton de Mage", "quantite": 1 }
+    ],
+    "date_connexion": "2024-11-03"
+  }
+  {
+    "player_id": 7,
+    "pseudo": "SilentArrow",
+    "classe": "Archer",
+    "niveau": 29,
+    "competences": [
+      { "_id": 5, "nom": "Tir Rapide" },
+      { "_id": 18, "nom": "Flèche Empoisonnée" }
+    ],
+    "inventaire": [
+      { "_id": 5, "nom": "Arc Long", "quantite": 1 },
+      { "_id": 26, "nom": "Talisman de Vitesse", "quantite": 2 },
+      { "_id": 10, "nom": "Casque de l'Inébranlable", "quantite": 1 }
+    ],
+    "date_connexion": "2024-11-01"
+  }
+  {
+    "player_id": 8,
+    "pseudo": "IceQueen",
+    "classe": "Mage",
+    "niveau": 42,
+    "competences": [
+      { "_id": 4, "nom": "Flèche de Glace" },
+      { "_id": 19, "nom": "Mur de Glace" }
+    ],
+    "inventaire": [
+      { "_id": 27, "nom": "Lance de Glace", "quantite": 1 },
+      { "_id": 24, "nom": "Bouclier Mystique", "quantite": 1 },
+      { "_id": 15, "nom": "Talisman de Protection", "quantite": 1 }
+    ],
+    "date_connexion": "2024-10-31"
+  }
+  {
+    "player_id": 9,
+    "pseudo": "StormChaser",
+    "classe": "Éclaireur",
+    "niveau": 38,
+    "competences": [
+      { "_id": 2, "nom": "Frappe Éclair" },
+      { "_id": 12, "nom": "Sprint" }
+    ],
+    "inventaire": [
+      { "_id": 19, "nom": "Bottes de Lévitation", "quantite": 1 },
+      { "_id": 9, "nom": "Bottes de Vitesse", "quantite": 1 },
+      { "_id": 26, "nom": "Talisman de Vitesse", "quantite": 1 }
+    ],
+    "date_connexion": "2024-10-27"
+  }
+  {
+    "player_id": 10,
+    "pseudo": "IronFist",
+    "classe": "Guerrier",
+    "niveau": 50,
+    "competences": [
+      { "_id": 1, "nom": "Coup Puissant" },
+      { "_id": 15, "nom": "Étreinte de Fer" }
+    ],
+    "inventaire": [
+      { "_id": 12, "nom": "Hache de Guerre", "quantite": 1 },
+      { "_id": 23, "nom": "Gantelets de Force", "quantite": 1 },
+      { "_id": 2, "nom": "Bouclier de Fer", "quantite": 2 }
+    ],
+    "date_connexion": "2024-11-04"
+  }
+  
