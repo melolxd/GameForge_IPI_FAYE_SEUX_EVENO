@@ -79,7 +79,7 @@ Assurez-vous d'avoir installé :
 
 1. **Lancer les tests unitaires** :
     ```bash
-    python3 -m unittest discover -v
+    python3 -m unittest discover -s tests -p "test_*.py"
     ```
 
 2. **Exemples d'utilisation** :
