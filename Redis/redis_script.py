@@ -1,63 +1,86 @@
 import redis
-import time
+import json
 
 # Connexion à Redis
 redis_client = redis.StrictRedis(host='localhost', port=6379, decode_responses=True)
 
-# Créer un profil joueur
-def create_player_profile(player_id, pseudo, classe, niveau, competences, inventaire):
-    key = f"player:{player_id}"
-    redis_client.hset(key, mapping={
-        "player_id": player_id,
+# CRUD des Profils
+def creer_profil(player_id, pseudo, classe, niveau, inventaire, competences):
+    """Créer ou mettre à jour un profil joueur."""
+    profil = {
         "pseudo": pseudo,
         "classe": classe,
         "niveau": niveau,
-        "competences": competences,
-        "inventaire": inventaire,
-        "date_connexion": time.strftime('%Y-%m-%d %H:%M:%S')
-    })
-    print(f"Profil du joueur {pseudo} créé avec succès !")
+        "inventaire": json.dumps(inventaire),
+        "competences": json.dumps(competences),
+    }
+    redis_client.hset(f"profile:{player_id}", mapping=profil)
 
-# Mettre à jour un inventaire
-def update_inventory(player_id, new_items):
-    key = f"player:{player_id}"
-    inventaire = redis_client.hget(key, "inventaire")
-    updated_inventory = f"{inventaire},{new_items}" if inventaire else new_items
-    redis_client.hset(key, "inventaire", updated_inventory)
-    print(f"Inventaire du joueur {player_id} mis à jour : {updated_inventory}")
+def lire_profil(player_id):
+    profil = redis_client.hgetall(f"profile:{player_id}")
+    if not profil:
+        raise ValueError(f"Aucun profil trouvé pour l'ID joueur {player_id}")
+    profil["inventaire"] = json.loads(profil["inventaire"])
+    profil["competences"] = json.loads(profil.get("competences", "[]"))
+    return profil
 
-# Récupérer un profil
-def get_player_profile(player_id):
-    key = f"player:{player_id}"
-    profile = redis_client.hgetall(key)
-    if profile:
-        print(f"Profil du joueur {player_id} : {profile}")
-    else:
-        print(f"Aucun profil trouvé pour le joueur {player_id}.")
-    return profile
+def mettre_a_jour_profil(player_id, **kwargs):
+    """Mettre à jour un profil joueur avec les données fournies."""
+    key = f"profile:{player_id}"
+    for champ, valeur in kwargs.items():
+        if champ in ["inventaire", "competences"]:
+            valeur = json.dumps(valeur)
+        redis_client.hset(key, champ, valeur)
 
-# Ajouter un score au classement
-def update_leaderboard(player_id, score):
-    redis_client.zadd("leaderboard", {player_id: score})
-    print(f"Score du joueur {player_id} ajouté au classement.")
+def supprimer_profil(player_id):
+    """Supprimer un profil joueur."""
+    redis_client.delete(f"profile:{player_id}")
 
-# Récupérer le top 10 des joueurs
-def get_top_players():
-    top_players = redis_client.zrevrange("leaderboard", 0, 9, withscores=True)
-    print("Top 10 joueurs :", top_players)
-    return top_players
+def statistiques_competences():
+    """Calculer les statistiques globales des compétences."""
+    statistiques = {}
+    for key in redis_client.keys("profile:*"):
+        profil = redis_client.hgetall(key)
+        competences = json.loads(profil.get("competences", "[]"))
+        for competence in competences:
+            statistiques[competence] = statistiques.get(competence, 0) + 1
+    return statistiques
 
-# Enregistrer un mouvement avec TTL
-def store_movement(player_id, x, y, ttl=60):
+# CRUD des Interactions
+def enregistrer_combat(player_id, ennemi_id, degats, timestamp):
+    """Journaliser un combat avec un TTL."""
+    key = f"combat:{player_id}:{ennemi_id}"
+    combat = {"degats": degats, "timestamp": timestamp}
+    redis_client.set(key, json.dumps(combat), ex=60)
+
+def enregistrer_deplacement(player_id, position, timestamp):
+    """Journaliser un déplacement avec un TTL."""
     key = f"move:{player_id}"
-    redis_client.setex(key, ttl, f"{{'x': {x}, 'y': {y}}}")
-    print(f"Mouvement du joueur {player_id} enregistré pour {ttl} secondes.")
+    mouvement = {"position": position, "timestamp": timestamp}
+    redis_client.set(key, json.dumps(mouvement), ex=10)
 
-# Enregistrer une attaque
-def store_attack(player_id, enemy_id, damage):
-    key = f"attack:{player_id}:{enemy_id}"
-    redis_client.hset(key, mapping={
-        "damage": damage,
-        "timestamp": time.time()
-    })
-    print(f"Combat enregistré entre {player_id} et {enemy_id} avec {damage} dégâts.")
+def recuperer_interactions(prefixe, filtre_temps=None):
+    """Récupérer les actions (combat, déplacement) avec un filtre optionnel."""
+    cles = redis_client.keys(f"{prefixe}:*")
+    resultats = []
+    for cle in cles:
+        donnees = redis_client.get(cle)
+        if donnees:
+            donnees = json.loads(donnees)
+            if not filtre_temps or donnees["timestamp"] >= filtre_temps:
+                resultats.append(donnees)
+    return resultats
+
+# CRUD des Classements
+
+def mettre_a_jour_classement(player_id, score):
+    """Mettre à jour le classement des joueurs."""
+    redis_client.zadd("leaderboard", {player_id: score})
+
+def recuperer_classement(top_n=10):
+    """Récupérer les N meilleurs joueurs."""
+    return redis_client.zrevrange("leaderboard", 0, top_n - 1, withscores=True)
+
+def classement_par_periode(min_timestamp, max_timestamp):
+    """Obtenir un classement entre deux timestamps."""
+    return redis_client.zrangebyscore("leaderboard", min_timestamp, max_timestamp, withscores=True)
