@@ -1,3 +1,5 @@
+version: '3'
+
 services:
   redis:
     image: redis:latest
@@ -19,18 +21,56 @@ services:
     volumes:
       - mongo_data:/data/db
 
-  cassandra:
+  cassandra-node1:
     image: cassandra:latest
-    container_name: cassandra_container
+    container_name: cassandra-node1
     ports:
       - "9042:9042"
     networks:
       - backend
     environment:
-      - CASSANDRA_LISTEN_ADDRESS=cassandra
+      - CASSANDRA_CLUSTER_NAME=TestCluster
+      - CASSANDRA_LISTEN_ADDRESS=cassandra-node1
       - CASSANDRA_RPC_ADDRESS=0.0.0.0
+      - CASSANDRA_SEEDS=cassandra-node1
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=Rack1
     volumes:
-      - cassandra_data:/var/lib/cassandra
+      - cassandra-data1:/var/lib/cassandra
+
+  cassandra-node2:
+    image: cassandra:latest
+    container_name: cassandra-node2
+    ports:
+      - "9043:9042"
+    networks:
+      - backend
+    environment:
+      - CASSANDRA_CLUSTER_NAME=TestCluster
+      - CASSANDRA_LISTEN_ADDRESS=cassandra-node2
+      - CASSANDRA_RPC_ADDRESS=0.0.0.0
+      - CASSANDRA_SEEDS=cassandra-node1
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=Rack1
+    volumes:
+      - cassandra-data2:/var/lib/cassandra
+
+  cassandra-node3:
+    image: cassandra:latest
+    container_name: cassandra-node3
+    ports:
+      - "9044:9042"
+    networks:
+      - backend
+    environment:
+      - CASSANDRA_CLUSTER_NAME=TestCluster
+      - CASSANDRA_LISTEN_ADDRESS=cassandra-node3
+      - CASSANDRA_RPC_ADDRESS=0.0.0.0
+      - CASSANDRA_SEEDS=cassandra-node1
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=Rack1
+    volumes:
+      - cassandra-data3:/var/lib/cassandra
 
 networks:
   backend:
@@ -39,4 +79,7 @@ networks:
 volumes:
   redis_data:
   mongo_data:
-  cassandra_data:
+  cassandra-data1:
+  cassandra-data2:
+  cassandra-data3:
+
