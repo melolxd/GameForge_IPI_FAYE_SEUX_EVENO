@@ -54,10 +54,22 @@ def enregistrer_combat(player_id, ennemi_id, degats, timestamp):
     redis_client.set(key, json.dumps(combat), ex=60)
 
 def enregistrer_deplacement(player_id, position, timestamp):
-    """Journaliser un déplacement avec un TTL."""
+    """Journaliser un déplacement d'un joueur avec un TTL."""
     key = f"move:{player_id}"
-    mouvement = {"position": position, "timestamp": timestamp}
+    mouvement = {
+        "position": position,
+        "timestamp": timestamp
+    }
     redis_client.set(key, json.dumps(mouvement), ex=10)
+
+def recuperer_deplacement(player_id):
+    """Récupérer le dernier déplacement d'un joueur."""
+    key = f"move:{player_id}"
+    mouvement = redis_client.get(key)
+    if mouvement:
+        return json.loads(mouvement)
+    else:
+        return f"Aucun déplacement trouvé pour le joueur {player_id}"
 
 def recuperer_interactions(prefixe, filtre_temps=None):
     """Récupérer les actions (combat, déplacement) avec un filtre optionnel."""
