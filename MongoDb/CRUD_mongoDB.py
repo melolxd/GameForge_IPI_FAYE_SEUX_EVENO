@@ -21,57 +21,57 @@ def main():
 
     # Insert data into Compétences
     
-    ajouterCompetence("Bouclier Magique", 15)
-    ajouterCompetence("Frappe de Foudre", 12)
-    ajouterCompetence("Coup Rapide", 5)
-    ajouterCompetence("Soin", 8)
-    ajouterCompetence("Cri de Guerre", 20)
-    ajouterCompetence("Pluie de Flèches", 18)
-    ajouterCompetence("Invisibilité", 25)
-    ajouterCompetence("Téléportation", 30)
-    ajouterCompetence("Rage du Berserker", 40)
-    ajouterCompetence("Vague de Feu", 22)
-    ajouterCompetence("Mur de Glace", 28)
-    ajouterCompetence("Poison Mortel", 12)
-    ajouterCompetence("Guérison de Masse", 50)
-    ajouterCompetence("Éclair de Givre", 14)
-    ajouterCompetence("Explosion Sismique", 45)
-    ajouterCompetence("Bouclier Divin", 60)
-    ajouterCompetence("Lame Sanguinaire", 20)
-    ajouterCompetence("Barrière de Vent", 25)
-    ajouterCompetence("Éclair du Phoenix", 55)
+    ajouterCompetenceToCompetence("Bouclier Magique", 15)
+    ajouterCompetenceToCompetence("Frappe de Foudre", 12)
+    ajouterCompetenceToCompetence("Coup Rapide", 5)
+    ajouterCompetenceToCompetence("Soin", 8)
+    ajouterCompetenceToCompetence("Cri de Guerre", 20)
+    ajouterCompetenceToCompetence("Pluie de Flèches", 18)
+    ajouterCompetenceToCompetence("Invisibilité", 25)
+    ajouterCompetenceToCompetence("Téléportation", 30)
+    ajouterCompetenceToCompetence("Rage du Berserker", 40)
+    ajouterCompetenceToCompetence("Vague de Feu", 22)
+    ajouterCompetenceToCompetence("Mur de Glace", 28)
+    ajouterCompetenceToCompetence("Poison Mortel", 12)
+    ajouterCompetenceToCompetence("Guérison de Masse", 50)
+    ajouterCompetenceToCompetence("Éclair de Givre", 14)
+    ajouterCompetenceToCompetence("Explosion Sismique", 45)
+    ajouterCompetenceToCompetence("Bouclier Divin", 60)
+    ajouterCompetenceToCompetence("Lame Sanguinaire", 20)
+    ajouterCompetenceToCompetence("Barrière de Vent", 25)
+    ajouterCompetenceToCompetence("Éclair du Phoenix", 55)
     # Insert data into Inventaire
     
-    ajouterInventaire("Épée du Brave")
-    ajouterInventaire("Bouclier de Fer")
-    ajouterInventaire("Potion de Soin")
-    ajouterInventaire("Potion de Mana")
-    ajouterInventaire("Arc Long")
-    ajouterInventaire("Amulette de Force")
-    ajouterInventaire("Anneau de Sagesse")
-    ajouterInventaire("Cape d'Invisibilité")
-    ajouterInventaire("Bottes de Vitesse")
-    ajouterInventaire("Casque de l'Inébranlable")
-    ajouterInventaire("Gants d'Assassin")
-    ajouterInventaire("Hache de Guerre")
-    ajouterInventaire("Bâton de Mage")
-    ajouterInventaire("Anneau de Régénération")
-    ajouterInventaire("Talisman de Protection")
-    ajouterInventaire("Potion d'Énergie")
-    ajouterInventaire("Ceinture du Gladiateur")
-    ajouterInventaire("Potion de Résistance")
-    ajouterInventaire("Bottes de Lévitation")
-    ajouterInventaire("Cape de Résistance au Feu")
-    ajouterInventaire("Épée Enflammée")
-    ajouterInventaire("Casque d'Immunité")
-    ajouterInventaire("Gantelets de Force")
-    ajouterInventaire("Bouclier Mystique")
-    ajouterInventaire("Potion de Puissance")
-    ajouterInventaire("Talisman de Vitesse")
-    ajouterInventaire("Lance de Glace")
-    ajouterInventaire("Cape de l'Ombre")
-    ajouterInventaire("Ceinture de Vitalité")
-    ajouterInventaire("Bouclier Solaire")
+    ajouterInventaireToInventaire("Épée du Brave")
+    ajouterInventaireToInventaire("Bouclier de Fer")
+    ajouterInventaireToInventaire("Potion de Soin")
+    ajouterInventaireToInventaire("Potion de Mana")
+    ajouterInventaireToInventaire("Arc Long")
+    ajouterInventaireToInventaire("Amulette de Force")
+    ajouterInventaireToInventaire("Anneau de Sagesse")
+    ajouterInventaireToInventaire("Cape d'Invisibilité")
+    ajouterInventaireToInventaire("Bottes de Vitesse")
+    ajouterInventaireToInventaire("Casque de l'Inébranlable")
+    ajouterInventaireToInventaire("Gants d'Assassin")
+    ajouterInventaireToInventaire("Hache de Guerre")
+    ajouterInventaireToInventaire("Bâton de Mage")
+    ajouterInventaireToInventaire("Anneau de Régénération")
+    ajouterInventaireToInventaire("Talisman de Protection")
+    ajouterInventaireToInventaire("Potion d'Énergie")
+    ajouterInventaireToInventaire("Ceinture du Gladiateur")
+    ajouterInventaireToInventaire("Potion de Résistance")
+    ajouterInventaireToInventaire("Bottes de Lévitation")
+    ajouterInventaireToInventaire("Cape de Résistance au Feu")
+    ajouterInventaireToInventaire("Épée Enflammée")
+    ajouterInventaireToInventaire("Casque d'Immunité")
+    ajouterInventaireToInventaire("Gantelets de Force")
+    ajouterInventaireToInventaire("Bouclier Mystique")
+    ajouterInventaireToInventaire("Potion de Puissance")
+    ajouterInventaireToInventaire("Talisman de Vitesse")
+    ajouterInventaireToInventaire("Lance de Glace")
+    ajouterInventaireToInventaire("Cape de l'Ombre")
+    ajouterInventaireToInventaire("Ceinture de Vitalité")
+    ajouterInventaireToInventaire("Bouclier Solaire")
     
     ajouterJoueur(
         "DragonSlayer", "Guerrier", 35,
@@ -134,10 +134,36 @@ def main():
         "2024-11-04"
     )
 
-    # Update data
-    addNiveau(1, 3)
+    # Other functions
+    ajouterNiveau('IronFist', 3)
+    
+    ajouterCompetenceToCompetence("Frappe de l'Ours", 10)
+    
+    ajouterCompetenceToJoueur('IronFist', {'_id': 16})
+    
+    ajouterInventaireToInventaire("Épée de l'Ours")
+    
+    ajouterInventaireToJoueur('IronFist', {'_id': 12})
+    
+    updateDateConnexion('IronFist', '2024-11-05')
+    
+    supprimerInventaireFromJoueur('StormChaser', {'_id': 9})
+    
+    deleteJoueur('ThunderKing')
+    
 
-def ajouterCompetence(nom, description):
+
+def getCompetencesFromCompetences(competences):
+    db = get_database()
+    collection = db['Compétences']
+    return collection.find_one({'_id': competences['_id']})
+
+def getCompetencesFromJoueur(pseudo, competences):
+    db = get_database()
+    collection = db['Joueurs']
+    return collection.find_one({'pseudo': pseudo, 'competences': competences})
+
+def ajouterCompetenceToCompetence(nom, description):
     db = get_database()
     collection = db['Compétences']
     competence = {
@@ -146,73 +172,173 @@ def ajouterCompetence(nom, description):
         'description': description
     }
     collection.insert_one(competence)
+    print('compétence ajoutée')
+    
+def ajouterCompetenceToJoueur(pseudo, competence):
+    db = get_database()
+    if getJoueurByPseudo(pseudo) is not None:
+        if getCompetencesFromCompetences(competence) is not None:
+            if getCompetencesFromJoueur(pseudo, competence) is None:
+                collection = db['Joueurs']
+                joueur = getJoueurByPseudo(pseudo)
+                competences = joueur['competences']
+                competences.append(competence)
+                collection.update_one({'pseudo': pseudo}, {'$set': {'competences': competences}})
+                print('compétence ajoutée au joueur')
+            else:
+                print('Compétence déjà acquise')
+        else:
+            print('Compétence introuvable')
+    else:
+        print('Joueur introuvable')
 
-def ajouterInventaire(nom):
+
+
+def getItemFromInventaireById(_id):
     db = get_database()
     collection = db['Inventaire']
-    inventaire = {
-        '_id': collection.count_documents({}) + 1,
-        'nom': nom
-    }
-    collection.insert_one(inventaire)
+    return collection.find_one({'_id': _id})
+
+def getItemFromInventaireByNom(nom):
+    db = get_database()
+    collection = db['Inventaire']
+    return collection.find_one({'nom': nom})
+
+def getItemFromJoueur(pseudo, item):
+    inventaire = getJoueurByPseudo(pseudo)['inventaire']
+    for itemInventaire in inventaire:
+        if item['_id'] == itemInventaire['_id']:
+            return itemInventaire
+    return None
+
+def ajouterInventaireToInventaire(nom):
+    if getItemFromInventaireByNom(nom) is None:
+        db = get_database()
+        collection = db['Inventaire']
+        inventaire = {
+            '_id': collection.count_documents({}) + 1,
+            'nom': nom
+        }
+        collection.insert_one(inventaire)
+        print('item ajouté')
+    else:
+        print('Item déjà existant')
+
+def ajouterInventaireToJoueur(pseudo, item):
+    db = get_database()
+    if getJoueurByPseudo(pseudo) is not None:
+        if getItemFromInventaireById(item['_id']) is not None:
+            if getItemFromJoueur(pseudo, item) is None:
+                collection = db['Joueurs']
+                joueur = getJoueurByPseudo(pseudo)
+                inventaire = joueur['inventaire']
+                inventaire.append(item)
+                collection.update_one({'pseudo': pseudo}, {'$set': {'inventaire': inventaire}})
+                print('item ajouté au joueur')
+            else:
+                collection = db['Joueurs']
+                joueur = getJoueurByPseudo(pseudo)
+                inventaire = joueur['inventaire']
+                itemInventaire = getItemFromJoueur(pseudo, item)
+                itemInventaire['quantite'] += 1
+                for i in range(len(inventaire)):
+                    if inventaire[i]['_id'] == itemInventaire['_id']:
+                        inventaire[i] = itemInventaire
+                        break
+                collection.update_one({'pseudo': pseudo}, {'$set': {'inventaire': inventaire}})
+                print('quantité augmentée')
+        else:
+            print('Item introuvable')
+    else:
+        print('Joueur introuvable')
+
+def supprimerInventaireFromJoueur(pseudo, item):
+    db = get_database()
+    if getJoueurByPseudo(pseudo) is not None:
+        if getItemFromInventaireById(item['_id']) is not None:
+            if getItemFromJoueur(pseudo, item) is not None:
+                collection = db['Joueurs']
+                joueur = getJoueurByPseudo(pseudo)
+                inventaire = joueur['inventaire']
+                itemInventaire = getItemFromJoueur(pseudo, item)
+                if itemInventaire['quantite'] > 1:
+                    itemInventaire['quantite'] -= 1
+                    collection.update_one({'pseudo': pseudo}, {'$set': {'inventaire': itemInventaire}})
+                else:
+                    inventaire.remove(itemInventaire)
+                    collection.update_one({'pseudo': pseudo}, {'$set': {'inventaire': inventaire}})
+            else:
+                print('Item non possédé')
+        else:
+            print('Item introuvable')
+    else:
+        print('Joueur introuvable')
+
     
 def ajouterJoueur(pseudo, classe, niveau, competences, inventaire, date_connexion):
-    db = get_database()
-    collection = db['Joueurs']
-    joueur = {
-        'pseudo': pseudo,
-        'classe': classe,
-        'niveau': niveau,
-        'competences': competences,
-        'inventaire': inventaire,
-        'date_connexion': date_connexion
-    }
-    collection.insert_one(joueur)
-
-def getJoueur(player_id):
-    db = get_database()
-    collection = db['Joueurs']
-    return collection.find_one({'player_id': player_id})
-
-def updateJoueur(_id, pseudo, classe, niveau, competences, inventaire, date_connexion):
-    db = get_database()
-    collection = db['Joueurs']
-    collection.update_one({'_id': _id}, {'$set': {'pseudo': pseudo, 'classe': classe, 'niveau': niveau, 'competences': competences, 'inventaire': inventaire, 'date_connexion': date_connexion}})
-
-def deleteJoueur(_id):
-    db = get_database()
-    collection = db['Joueurs']
-    collection.delete_one({'_id': _id})
-
-def addNiveau(_id, niveau):
-    db = get_database()
-    collection = db['Joueurs']
-    collection.update_one({'_id': _id}, {'$set': {'niveau': niveau}})
-
-def addCompetence(_id, competence):
-    db = get_database()
-    collection = db['Joueurs']
-    joueur = getJoueur(_id)
-    competences = joueur['competences']
-    competences.append(competence)
-    collection.update_one({'_id': _id}, {'$set': {'competences': competences}})
-
-def addInventaire(_id, item):
-    db = get_database()
-    collection = db['Joueurs']
-    joueur = getJoueur(_id)
-    inventaire = joueur['inventaire']
-    inventaire.append(item)
-    collection.update_one({'_id': _id}, {'$set': {'inventaire': inventaire}})
+    if getJoueurByPseudo(pseudo) is not None:
+        print('Joueur déjà existant')
+        return None
+    else:
+        db = get_database()
+        collection = db['Joueurs']
+        joueur = {
+            'pseudo': pseudo,
+            'classe': classe,
+            'niveau': niveau,
+            'competences': competences,
+            'inventaire': inventaire,
+            'date_connexion': date_connexion
+        }
+        collection.insert_one(joueur)
     
-def removeInventaire(_id, item):
+
+def getJoueurByPseudo(pseudo):
     db = get_database()
     collection = db['Joueurs']
-    joueur = getJoueur(_id)
-    inventaire = joueur['inventaire']
-    inventaire.remove(item)
-    collection.update_one({'_id': _id}, {'$set': {'inventaire': inventaire}})
+    return collection.find_one({'pseudo': pseudo})
 
+
+def updateDateConnexion(pseudo, date_connexion):
+    if getJoueurByPseudo(pseudo) is not None:
+        db = get_database()
+        collection = db['Joueurs']
+        collection.update_one({'pseudo': pseudo}, {'$set': {'date_connexion': date_connexion}})
+    else:
+        print('Joueur introuvable')
+    
+def deleteJoueur(pseudo):
+    if getJoueurByPseudo(pseudo) is None:
+        print('Joueur introuvable')
+        return None
+    else:
+        db = get_database()
+        collection = db['Joueurs']
+        collection.delete_one({'pseudo': pseudo})
+
+def ajouterNiveau(pseudo, niveau):
+    db = get_database()
+    if getJoueurByPseudo(pseudo) is not None:
+        collection = db['Joueurs']
+        joueur = getJoueurByPseudo(pseudo)
+        collection.update_one({'pseudo': pseudo}, {'$set': {'niveau': joueur['niveau'] + niveau}})
+        print('niveau ajouté')
+    else:
+        print('Joueur introuvable')
+
+        
+
+    
+def removeInventaire(pseudo, item):
+    db = get_database()
+    if getJoueurByPseudo(pseudo) is not None:
+        collection = db['Joueurs']
+        joueur = getJoueurByPseudo(pseudo)
+        inventaire = joueur['inventaire']
+        inventaire.remove(item)
+        collection.update_one({'pseudo': pseudo}, {'$set': {'inventaire': inventaire}})
+    else:
+        print('Joueur introuvable')
 
 
 if __name__ == "__main__":
