@@ -10,6 +10,11 @@ def get_session():
 
 
 def create_keyspace(session):
+    """
+    Création du keyspace
+    :param session: la connexion à la bdd cassandra
+    :return:
+    """
     query = """
     CREATE KEYSPACE IF NOT EXISTS tp_keyspace WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
     """
@@ -18,6 +23,11 @@ def create_keyspace(session):
 
 
 def use_keyspace(session):
+    """
+    On se place sur le keyspace
+    :param session: la connexion à la bdd cassandra
+    :return:
+    """
     query = "USE tp_keyspace;"
     session.execute(query)
     print("Keyspace 'tp_keyspace' utilisé.")
@@ -37,7 +47,6 @@ def create_table(session):
 
 
 def insert_sample_data(session):
-    # Insérer des données d'exemple, une par une
     data = [
         ('attaque', 100, '2024-01-01 10:00:00'),
         ('defense', 50, '2024-01-02 11:30:00'),

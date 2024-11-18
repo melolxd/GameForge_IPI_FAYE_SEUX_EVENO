@@ -8,8 +8,8 @@ def get_session():
     :return: code de retour
     """
     try:
-        cluster = Cluster(['127.0.0.1'])  # Remplacez par l'adresse de votre cluster
-        session = cluster.connect('tp_keyspace')  # Remplacez 'tp_keyspace' par le nom de votre keyspace
+        cluster = Cluster(['127.0.0.1'])
+        session = cluster.connect('tp_keyspace')
         print("Connexion à Cassandra réussie")
         return session
     except Exception as e:
@@ -35,7 +35,6 @@ def create_stat(player_id, timestamp, type_action, xp):
         return
 
     try:
-        # Requête avec formatage classique %s
         query = "INSERT INTO statistiques_joueur (player_id, timestamp, type_action, xp) VALUES (%s, '%s', %s, %s)"
         session.execute(query, (player_id, timestamp, type_action, xp))  # Exécution avec les paramètres
         print(f"Statistiques créées pour le joueur {player_id}")
@@ -52,7 +51,6 @@ def read_stat(player_id):
     session = get_session()
 
     try:
-        # Requête avec formatage classique %s
         query = "SELECT * FROM statistiques_joueur WHERE player_id = %s"
         result = session.execute(query, (player_id,))  # Exécution avec les paramètres
 
@@ -73,7 +71,6 @@ def update_xp(player_id, new_xp):
     session = get_session()
 
     try:
-        # Requête avec formatage classique %s
         query = "UPDATE statistiques_joueur SET xp = %s WHERE player_id = %s"
         session.execute(query, (new_xp, player_id,))  # Exécution avec les paramètres
         print(f"XP du joueur {player_id}  mis à jour à {new_xp}")
@@ -90,7 +87,6 @@ def delete_stat(player_id):
     session = get_session()
 
     try:
-        # Requête avec formatage classique %s
         query = "DELETE FROM statistiques_joueur WHERE player_id = %s"
         session.execute(query, (player_id,))  # Exécution avec les paramètres
         print(f"Statistiques supprimées pour le joueur {player_id}")

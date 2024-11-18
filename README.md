@@ -112,9 +112,36 @@ Assurez-vous d'avoir installé :
 
 ## **Partie Cassandra**
 **Fonctionnalités Implémentées** :  
-*Alexis*
+Avec Cassandra, on souhaite enregistrer des statistiques concernant les joueurs, par exemple: le nombre d'expérience que chaque actions rapporte.
+
+- **Créer une statistique**:
+```python
+create_stat(player_id, timestamp, type_action, xp)
+
+```
+
+- **Lire une statistique**:
+```python
+read_stat(player_id)
+```
+
+- **Mettre à jour une statistique**:
+```python
+new_xp = 2000
+update_xp(player_id, new_xp)
+
+```
+
+- **Supprimer une statistique**:
+```python
+delete_stat(player_id)
+```
 
 
+Notre base de données Cassandra est situé dans un cluster avec plusieurs noeuds, ce qui rend la rend scalable et tolérente aux pannes.
+Les noeux se partagent les données situé dans le keyspace.
+
+Plus d'info dans la documentation technique.
 ## **Auteurs**
 - **Redis** : Mattéo FAYE
 - **MongoDB** : Mylan SEUX
