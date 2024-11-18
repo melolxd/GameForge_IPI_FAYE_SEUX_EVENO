@@ -106,7 +106,6 @@ Assurez-vous d'avoir installé :
 
 ## **Partie MongoDB**
 **Fonctionnalités Implémentées** :  
-*Mylan*
 
 ---
 
