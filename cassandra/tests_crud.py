@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 
-# Mon joeur de test
+# Mon joueur de test
 player_id = uuid.uuid4()
 timestamp = datetime.now()
 type_action = "attaque"

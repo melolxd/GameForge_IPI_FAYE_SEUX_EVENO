@@ -19,7 +19,7 @@ def get_session():
 def create_stat(player_id, timestamp, type_action, xp):
     """
     Créer un nouvel enregistrement
-    :param player_id: id du joeur
+    :param player_id: id du joueur
     :param timestamp: timestamp de l'action
     :param type_action: le type de l'action: victoire, défaite, défense, attaque
     :param xp: l'xp récupérer suite à l'action
@@ -45,7 +45,7 @@ def create_stat(player_id, timestamp, type_action, xp):
 def read_stat(player_id):
     """
     Lire un enregistrement par player_id
-    :param player_id: id du joeur
+    :param player_id: id du joueur
     :return: code de retour
     """
     session = get_session()
@@ -64,7 +64,7 @@ def read_stat(player_id):
 def update_xp(player_id, new_xp):
     """
     Mettre à jour les points d'expérience d'un joueur
-    :param player_id: id du joeur
+    :param player_id: id du joueur
     :param new_xp: le bouveau montant d'xp
     :return: code de retour
     """
@@ -81,7 +81,7 @@ def update_xp(player_id, new_xp):
 def delete_stat(player_id):
     """
     Supprimer un enregistrement par player_id
-    :param player_id: id du joeur
+    :param player_id: id du joueur
     :return: code de retour
     """
     session = get_session()
